@@ -1,33 +1,57 @@
-# Waitlist setup
+# Lumenarc - Waitlist Micro-App
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+This is a lightweight micro-app built for Lumenarc’s Stage-2 Take-home Project.  
+It handles waitlist signups, AI enrichment of company data, and Slack notifications — using minimal hand-code and AI orchestration.
+
+## Features
+
+1. Landing page with Lumenarc branding (logo, color palette)
+2. Waitlist form with validation (rejects public email domains)
+3. Submission data saved to Supabase
+4. Company enrichment and lead scoring via Claude AI
+5. Instant Slack notification with signup details
+
+## Overview
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gayanes-projects-4b052111/v0-waitlist-setup)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/9GjnZC9spvZ)
 
-## Overview
-
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+This repository will stay in sync with deployed chats on [v0.dev](https://v0.dev).
+Any changes you make to deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
 
 ## Deployment
 
-Your project is live at:
+Access the live deployed version here:
 
-**[https://vercel.com/gayanes-projects-4b052111/v0-waitlist-setup](https://vercel.com/gayanes-projects-4b052111/v0-waitlist-setup)**
+**[https://v0-waitlist-setup-nine.vercel.app/](https://v0-waitlist-setup-nine.vercel.app/)**
 
-## Build your app
 
-Continue building your app on:
+## Installation & Local Run Instructions
 
-**[https://v0.dev/chat/projects/9GjnZC9spvZ](https://v0.dev/chat/projects/9GjnZC9spvZ)**
+1. Clone the repository:
 
-## How It Works
+```bash
+git clone https://github.com/GayaneNikoghosyan/v0-Pilot-wait-list-micro-app/.git
+```
+```
+cd v0-Pilot-wait-list-micro-app
+```
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3.Create a .env.local file in the root directory and add your environment variables (see below).
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+The app will be running at http://localhost:3000.
 
 
 ## Required Environment Variables
@@ -38,7 +62,7 @@ Continue building your app on:
 4. SLACK_WEBHOOK_URL	= Webhook URL to send new waitlist submissions to Slack
 
 
-## Short description of your Lead Score Logic:
+## Short description of Lead Score Logic:
 The Lead Score is calculated based on three weighted factors:
 
 1. ICP Match (B2B SaaS relevance) — 40% weight (Scores 1–5 depending on how closely the company matches a B2B SaaS ideal customer profile.) 
