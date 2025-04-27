@@ -70,3 +70,7 @@ The Lead Score is calculated based on three weighted factors:
 3. Demo Friction — 30% weight (Scores from 1 (no clear demo option) to 5 (easy "Book Demo" button prominent on the site).)
    
 Each factor is rated individually, then the weighted average is calculated to produce a final Lead Score between 1 and 5.
+
+## Watch recorded walkthrough
+
+**[https://www.loom.com/share/92743cf71dd047f5ad41ee0a1484529e?sid=7989ecb3-261a-4d90-ad2d-897efb226a5b](https://www.loom.com/share/92743cf71dd047f5ad41ee0a1484529e?sid=7989ecb3-261a-4d90-ad2d-897efb226a5b)**
